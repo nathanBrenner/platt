@@ -10,13 +10,150 @@
 		<script src="./app.js"></script>
 </head>
 <body>
-	<!--
-		header
-		search bar
-		section category list
-		todays deals
-		recently viewed
-		footer
-	-->
+	<header class="platt__header">
+		<img class="platt__logo" src="./assets/img/logo.png" alt="Platt">
+		<div class="platt__header-icons">
+			<img src="./assets/ic/white/ic_search.png" alt="search">
+			<img src="./assets/ic/white/ic_shopping_cart.png" alt="shopping cart">
+			<img src="./assets/ic/white/ic_person.png" alt="profile">
+			<img src="./assets/ic/white/ic_menu.png" alt="menu">
+		</div>
+	</header>
+	<section class="platt__search">
+		<input type="text" name="search-products" placeholder="What are you looking for?">
+	</section>
+	<section class="platt__categories-menu">
+		<ul>
+			<li class="platt__all-categories">
+				<span class="platt_category-icon">
+					<img src="./assets/ic/black/ic_categories.png" alt="All Categories"/>
+				</span>
+				<span>Shop all categories</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="go to all categories"/>
+			</li>
+			<li>
+				<span class="platt_category-icon">
+					<img src="./assets/ic/black/ic_playlist_add_check.png" alt="My catelog"/>
+				</span>
+				<span>My Catalog</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="view the full catelog"/>
+			</li>
+			<li>
+				<span class="platt_category-icon">
+					<img src="./assets/ic/black/ic_list.png" alt="My list"/>
+				</span>
+				<span>My List</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="view your current list"/>
+			</li>
+			<li>
+				<span class="platt_category-icon">
+					<img src="./assets/ic/green/ic_chat - active.png" alt="Help"/>
+				</span>
+				<span>Live Help</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="get help"/>
+			</li>
+			<li>
+				<span class="platt_category-icon">
+					<img src="./assets/ic/black/ic_check_circle.png" alt="PIM"/>
+				</span>
+				<span>PIM</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="go to PIM"/>
+			</li>
+			<li>
+				<span class="platt_category-icon">
+					<img src="./assets/ic/white/ic_person.png" alt="account" class="platt__person-icon"/>
+				</span>
+				<span>Account</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="edit your account"/>
+			</li>
+			<li>
+				<span class="platt_category-icon">
+					<img src="./assets/ic/black/ic_place.png" alt="Branch locations"/>
+				</span>
+				<span>Branch Locations</span>
+				<img src="./assets/ic/black/ic_arrow_forward.png" alt="view branch locations"/>
+			</li>
+		</ul>
+	</section>
+	<section class="platt__mobile-options">
+		<div class="platt__mobile-option">
+			<div class="platt__mobile-img-container">
+				<img src="./assets/ic/green/ic_line_style.png" alt="categories">
+			</div>
+			<div>Categories</div>
+		</div>
+		<div class="platt__mobile-option">
+			<div class="platt__mobile-img-container">
+				<img src="./assets/ic/green/ic_search.png" alt="categories">
+			</div>
+			<div>Search</div>
+		</div>
+		<div class="platt__mobile-option">
+			<div class="platt__mobile-img-container">
+				<img src="./assets/ic/green/ic_scanner.png" alt="scan">
+			</div>
+			<div>Scan</div>
+		</div>
+	</section>
+	<section class="platt__special-offers">
+		<div class="platt__todays-deals">
+			<img src="./assets/panel/deal.png" alt="todays deals">
+		</div>
+		<div class="platt__plus-member">
+			<img src="./assets/img/platt-plus.png" alt="become a platt plus member">
+			<p class="platt__main-text">Get Started Today</p>
+			<p class="platt__sub-text">Become a <span class="platt--green-text">Platt Plus</span> Member.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="platt__recent-viewed">
+			<div  class="platt__recent-viewed-1">
+				<span>Recently Viewed</span>
+				<span class="platt--green-text">View all</span>
+			</div>
+			<div  class="platt__recent-viewed-2">
+				<img src="./assets/recent/11.png" alt="">
+				<img src="./assets/recent/22.png" alt="">
+				<img src="./assets/recent/22.png" alt="">
+			</div>
+		</div>
+		<div class="platt__extra-content">
+			<div class="patt__card-content">
+				<img src="./assets/img/super-tool-day.png" alt="super tool day">
+				<p>Super Tool Day & Dynamic Data Day</p>
+			</div>
+			<div class="patt__card-content">
+				<img src="./assets/img/ic_location_b.png" alt="branch locations">
+				<p>Branch Locations</p>
+			</div>
+			<div class="patt__card-content">
+				<img src="./assets/img/ic_helpcenter.png" alt="help center">
+				<p>Help Center</p>
+			</div>
+			<div class="patt__card-content">
+				<img src="./assets/img/ic_platt-u.png" alt="platt university">
+				<p>Platt University</p>
+			</div>
+		</div>
+		<div class="platt__mobile-app">
+			<img src="./assets/panel/app-get-banner.png" alt="platt app">
+			<p>Shop better, dowload the Platt App today</p>
+		</div>
+	</section>
+	<footer>
+		<p class="platt--bold platt__support">Support Center</p>
+		<p class="platt--bold">800-25-Platt</p>
+		<p class="platt--light platt__phone">800-257-5288</p>
+		<p class="platt--light">4 a.m. - 12 a.m. (pst)</p>
+		<p class="platt--light">7 Days a week</p>
+		<button class="platt__help">
+			<img src="./assets/ic/black/ic_comment.png" alt="get help">
+			<span>Live Help</span>
+		</button>
+		<div class="platt__footer-links">
+			<a>Contact Us</a>
+			<a>What's New</a>
+			<a>FAQ's</a>
+		</div>
+	</footer>
 </body>
 </html>

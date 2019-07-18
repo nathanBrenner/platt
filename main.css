@@ -1,0 +1,308 @@
+:root {
+	--platt-green: #009D5F;
+	--platt-white: #ffffff;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+body, h1, p, ul {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+.platt__header {
+	background-color: var(--platt-green);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.platt__header h1 {
+	color: var(--platt-white);
+}
+
+.platt__header-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 120px;
+}
+
+.platt__header-icons img {
+	height: 100%;
+	width: auto;
+}
+
+
+/** search section */
+.platt__search {
+	width: 100%;
+	background-color: var(--platt-green);
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+	position: relative;
+}
+
+.platt__search input {
+	width: 80%;
+	border-radius: 2px;
+	border: none;
+	padding: 10px;
+}
+
+.platt__search::after {
+	position: absolute;
+	content: url(./assets/ic/black/ic_search.png);
+	right: 30px;
+	bottom: 12px;
+}
+
+/** categories */
+.platt__categories-menu {
+	width: 100%;
+}
+.platt__categories-menu ul {
+	margin: 10px;
+	padding: 0 10px;
+}
+
+.platt__categories-menu ul li {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 40px 1fr 40px;
+	border-top: 2px solid lightgrey;
+	height: 50px;
+	align-items: center;
+}
+
+.platt__categories-menu ul li.platt__all-categories {
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	padding: 10px 0;
+}
+
+.platt__categories-menu ul li img {
+	height: 20px;
+	width: auto;
+}
+
+.platt_category-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.platt__person-icon {
+	background-color: black;
+}
+
+.platt__mobile-options {
+	width: 100%;
+	background-color: lightgray;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+.platt__mobile-option {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.platt__mobile-img-container {
+	border-radius: 50%;
+	background-color: var(--platt-white);
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 1px 1px 8px darkgray;
+	margin-bottom: 10px;
+}
+
+.platt__special-offers {
+	width: 100%;
+	display: grid;
+	background-color: lightgray;
+}
+
+.platt__todays-deals {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.platt__todays-deals img {
+	width: 100%;
+	height: auto;
+}
+
+.platt__plus-member {
+	background: white;
+	box-shadow: 1px 1px 8px darkslategray;
+	width: 100%;
+	max-width: 300px;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.platt__plus-member img {
+	width: 100%;
+	max-width: 270px;
+	height: auto;
+}
+
+.platt__plus-member p {
+	font-weight: 700;
+}
+
+.platt__main-text {
+	font-size: 18px;
+}
+
+.platt__sub-text {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.platt--green-text {
+	color: var(--platt-green);
+}
+
+.platt__plus-member button {
+	background-color: lightgray;
+	opacity: 0.8;
+	border-radius: 20px;
+	width: 11rem;
+	padding: 10px;
+	border: none;
+}
+
+.platt__recent-viewed {
+	background: white;
+	box-shadow: 1px 1px 8px darkslategray;
+	width: 100%;
+	max-width: 300px;
+	margin: 20px auto;
+}
+
+.platt__recent-viewed-1 {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 10px;
+	font-size: 14px;
+}
+
+.platt__recent-viewed-2 {
+	padding: 0 10px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.platt__recent-viewed-2 img {
+	width: 100%;
+	height: auto;
+}
+
+.platt__extra-content {
+	display: grid;
+	grid-template-columns: repeat(2, 0.8fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 10px;
+	margin: 0 auto;
+	max-width: 300px;
+	width: 100%;
+}
+
+.patt__card-content {
+	background: white;
+	box-shadow: 1px 1px 8px lightgray;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-gap: 20px;
+	padding: 15px;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.platt__mobile-app {
+	width: 100%;
+	max-width: 300px;
+	margin: 20px auto;
+	background: white;
+	box-shadow: 1px 1px 8px darkslategray;
+}
+.platt__mobile-app img {
+	object-fit: cover;
+	width: 300px;
+	height: 116px;
+	object-position: 100% 0;
+}
+
+.platt__mobile-app p {
+	padding: 10px 20px;
+	font-size: 14px;
+}
+
+footer {
+	background-color: #5a5a5a;
+	color: var(--platt-white);
+	display: grid;
+	justify-items: center;
+	padding: 20px 0;
+}
+
+.platt--bold {
+	font-weight: 700;
+}
+
+.platt--light {
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.platt__support {
+	padding: 10px 0;
+}
+
+.platt__phone {
+	padding-bottom: 10px;
+}
+
+.platt__help {
+	width: 160px;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	background-color: var(--platt-white);
+	margin: 24px;
+	border-radius: 20px;
+}
+
+.platt__help span {
+	margin-left: 10px;
+}
+
+.platt__footer-links {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
