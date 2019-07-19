@@ -17,7 +17,8 @@ async function app() {
 
 /**
  *
- * @param {*} [list=[]] string[];
+ * @param {*} [list string[];
+ * @param {*} [input html input] html input element. This is needed in another function, so instead of declaring it more than once, it is assigned once (in app, like 4), and reused in this function
  */
 function filterList(list, input) {
 	const oldDropdown = document.querySelector('.platt__dropdown');
