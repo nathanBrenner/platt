@@ -310,6 +310,18 @@ footer {
 	display: none;
 }
 
+.platt__dropdown {
+	text-decoration: none;
+	width: 100px;
+	position: absolute;
+	background: white;
+	border: 1px solid darkgrey;
+}
+
+.platt__dropdown ul li {
+	list-style-type: none;
+}
+
 @media (min-width: 740px) {
 	.platt__header {
 		padding: 10px 30px;
