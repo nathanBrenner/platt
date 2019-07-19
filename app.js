@@ -21,7 +21,7 @@ async function app() {
  * @param {*} [input html input] html input element. This is needed in another function, so instead of declaring it more than once, it is assigned once (in app, like 4), and reused in this function
  */
 function filterList(list, input) {
-	// on ever keyup event, a div, and a ui is added and removed from the dom
+	// on every keyup event, a div, and a ui is added and removed from the dom
 	// this would likely impact performance
 	// alternatively, those could be added into the dom once with display set to none,
 	// then modified to become visible in this event handler
